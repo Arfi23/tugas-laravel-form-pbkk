@@ -13,7 +13,7 @@ class FormController extends Controller
     public function show(Request $request)
     {
         $request->validate([
-            'nama' => 'required|name',
+            'nama' => 'required',
             'notelp' => 'required|numeric',
             'email' => 'required|email',
             'password' => 'required|min:4',
