@@ -13,11 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/form');
 });
 
-Route::get('/form', [FormController::class, 'index']);
-Route::post('/form', [FormController::class, 'show']);
-Route::get('/result', [FormController::class, 'result']);
+Route::get('/form', 'App\Http\Controllers\FormController@index');
+Route::post('/form', 'App\Http\Controllers\FormController@show');
+Route::get('/result', 'App\Http\Controllers\FormController@result');
 

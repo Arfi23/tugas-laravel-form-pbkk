@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
@@ -19,7 +19,7 @@ class FormController extends Controller
             'password' => 'required|min:4',
             'pekerjaan' => 'required',
             'institusi' => 'required',
-            'double' => 'required|numeric|between:2.5,99.99',
+            'double' => 'required|numeric|between:2.50,99.99',
             'image' => 'required|max:2048|mimes:jpg,jpeg,png'
         ]);
 
