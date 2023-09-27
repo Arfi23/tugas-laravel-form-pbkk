@@ -28,8 +28,15 @@ img {
     font-size: larger;
     font-weight: 700;
     margin-top: 30px;
-    padding-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 100px;
     background-color: rgb(38, 252, 252);
     text-align: center;
-    height: 50px;
+    padding-bottom: 20px;
+    height: 30px;
+}
+
+.footer {
+    background-color: #2c1169;
+    height: 90px;
 }
