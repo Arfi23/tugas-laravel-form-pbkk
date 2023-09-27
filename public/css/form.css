@@ -1,16 +1,35 @@
+body {
+    background-color: rgb(32, 99, 188);
+}
+
+.custom-form {
+    max-height: 90vh; /* Sesuaikan dengan tinggi maksimal yang Anda inginkan */
+    overflow-y: auto; /* Menambahkan scroll vertical jika form terlalu panjang */
+}
+
 #formcontainer {
     background-image: linear-gradient(
         to bottom,
         rgb(52, 230, 237),
         rgb(32, 99, 188)
     );
-    height: 700px;
-    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.form-group {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+.col-md-5 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    /* Tentukan lebar maksimum untuk kotak form */
+    max-width: 400px;
+    /* Pastikan kotak form mengisi ruang maksimum */
+    width: 100%;
 }
 
 label {
@@ -19,4 +38,10 @@ label {
 
 h4 {
     font-weight: 800;
+    margin-left: 10px;
+}
+
+.footer {
+    background-color: #2c1169;
+    height: 90px;
 }
